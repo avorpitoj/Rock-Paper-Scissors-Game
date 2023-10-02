@@ -9,6 +9,7 @@ body
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
+    height: 200px;
 }
 
 .top-left-image 
