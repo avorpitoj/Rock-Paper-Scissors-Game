@@ -1,9 +1,9 @@
 body
 {
     background-color:#f4ffb4;
-    height: 100%;    
+    height: 100%;
+    
 }
-
 .image-container 
 {
     display: flex;
@@ -18,6 +18,7 @@ body
     height: 200px;
     margin: 0;
     padding: 0;
+    margin-top: 0px;
     animation: shakeAnimation 1s ease infinite;
 }
 
@@ -26,25 +27,27 @@ body
     width: 500px;
     height: 200px;
     margin: 0 auto;
+    margin-top: 0px;
     padding: 0;
-    animation: swing 2s ease-in-out infinite;   
+    animation: swing 2s ease-in-out infinite;
+   
 }
 
 .top-right-image
 {
     width: 260px;
     height: 220px;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-right: 0%; 
-}
 
+}
 
 .bottom-image-container
 {
     display: flex;
-    align-items: end;
     align-items: center; /* Center vertically */
     justify-content: center /* Center horizontally */ 
+  
 }
 
 .bottom-left-image 
@@ -53,6 +56,7 @@ body
     margin: 0;
     padding: 0; 
     animation: swing 1s ease-in-out infinite; /* Apply the swing animation */
+
 }
 
 .bottom-middle-image 
@@ -60,16 +64,19 @@ body
     width: 650px; 
     margin: 0 auto;
     padding: 0;
-    animation: swing 1s ease-in-out infinite; /* Apply the swing animation */  
+    animation: swing 1s ease-in-out infinite; /* Apply the swing animation */
+    
 }
-
 .bottom-right-image 
 {
     width: 100px; 
     margin: 0;
     padding: 0;
-    animation: swing 1s ease-in-out infinite; /* Apply the swing animation */ 
+    animation: swing 1s ease-in-out infinite; /* Apply the swing animation */
+    
 }
+
+
 
 /* Adding Swing animation to the bottom right image */
 @keyframes swing 
@@ -88,6 +95,7 @@ body
          }
 }
 
+
 h1
 {  
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -101,7 +109,6 @@ h1
     margin: 0%;
     padding: 0%;
 }
-
 /* Applying Animation to the game title */
 .game-title 
 {
@@ -140,6 +147,7 @@ p
 { 
     min-width: 30%;
     max-width: 60vh;
+    /* min-height: 30vh; */
     max-height: 60vh;
     display: flex;
     flex-wrap: nowrap;
@@ -147,8 +155,8 @@ p
     justify-content: center;  
     margin: auto;
     padding-left: 10px;
+    
 }
-
 button
 {  
     border:none;
@@ -158,9 +166,9 @@ button
     cursor:pointer;   
     transition:all 0.3s ease-in-out;
     /* Animation for button styles */  
-     animation: spin 2s linear ;    
+     animation: spin 2s linear ;
+    
 }
-
 /* Adding Spin animation to the buttons */
 @keyframes spin 
 {  
@@ -183,15 +191,10 @@ button:hover
 #user-score{  color:#2196f3;}
 #computer-score{  color:#ff0000;}
 
-.footer
-{
-    align-content: flex-end;
-    bottom: 0;
-}
 
 /* Style for the leaderboard position */
-table
-{
+
+table{
     margin: auto;
 }
 .leaderboard 
@@ -221,6 +224,16 @@ table
     color: #fbf705;
 }
 
+.footer
+{
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    align-content: flex-end;
+    position: relative;
+    bottom: 0;
+   
+}
 
 
 /* CSS to Hide both horizontal and vertical scrollbars */
@@ -286,7 +299,7 @@ body::-webkit-scrollbar-track
 @media screen and (max-width: 768px) 
 {
     .game-title {
-        font-size: 3rem; /* Adjust as needed for smaller screens */
+        font-size: 2rem; /* Adjust as needed for smaller screens */
     }
 
 }
@@ -294,36 +307,60 @@ body::-webkit-scrollbar-track
 
 @media screen and (max-width: 768px)
 {
-        .buttons 
-    {
+
+    
+        .buttons {
             flex-direction: row; /* Stack buttons vertically */
             text-align: center; /* Center-align text within buttons */
-    }
+            /* width: 100px;
+            height: 100px; */
+        }
     
-        button 
-    {
+        button {
             margin: 0.5rem; /* Reduce margin for spacing */
             width: 100px;
             height: 100px;
-    }
+
+        }
+       
+    
+
 }
 
 @media screen and (max-width: 768px)
 {   
-    .mobile .leaderboard 
-    {
-        top: 800px; /* Adjust positioning for smaller screens */    
+    
+
+    .mobile .leaderboard {
+        top: 800px; /* Adjust positioning for smaller screens */
+        
+        
     }
 
-    .leaderboard caption 
-    {
+    .leaderboard caption {
         font-size: 1.5rem; /* Adjust caption font size for smaller screens */
         justify-content: center;
+        
+    
     }
 
     .leaderboard th,
-    .leaderboard td 
-    {
+    .leaderboard td {
         padding: 2px 4px; /* Adjust cell padding for smaller screens */
+        
+        
+        
+    
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .footer 
+    {
+        display: flex;
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        bottom: 0;
+
     }
 }
