@@ -9,7 +9,7 @@ body
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
-    height: 100px; /* Set a fixed height for the container */
+    height: 200px; /* Set a fixed height for the container */
 }
 
 .top-left-image 
