@@ -263,6 +263,15 @@ body::-webkit-scrollbar-track
 @media screen and (max-width: 768px) 
 {
     /* Adjust common styles for all images for smaller screens */
+
+    .image-container
+    {
+        display: flex;
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        height: 150px;
+    }
+    
     .top-left-image
     {
         width: 100px; /* Adjust as needed for smaller screens */
