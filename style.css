@@ -320,11 +320,12 @@ body::-webkit-scrollbar-track
             margin: 0.5rem; /* Reduce margin for spacing */
             width: 100px;
             height: 100px;
-
         }
-       
-    
-
+         p
+              {
+            font-size:1rem;  
+            font-weight:600;
+              }
 }
 
 @media screen and (max-width: 768px)
